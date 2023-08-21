@@ -3,7 +3,7 @@ layout: default
 title: Student Blog
 ---
 
-aksdjkfklasdiasdjfio;jasdiog;jasdihj
+its like testing
 ## Build you Home Page here 
 This is about your journey. Start now!!!
 
