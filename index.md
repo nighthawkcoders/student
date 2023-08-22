@@ -3,7 +3,7 @@ layout: default
 title: Student Blog
 ---
 
-its like dsaf
+its like 
 ## Build you Home Page here 
 This is about your journey. Start now!!!
 
