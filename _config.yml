@@ -1,10 +1,10 @@
 title: CSA Pages
-description: Shaurya Goel
-owner_name: Nighthawk Coders
-github_username: nighthawkcoders
-baseurl: "/student"
+description: CSA with Mort
+owner_name: Shaurya Goel
+github_username: STG-7
+baseurl: "/csapages"
 # remote_theme: pages-themes/midnight@v0.2.0
-remote_theme: pages-themes/dinky@v0.2.0
+# remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0
 # # remote_theme: pages-themes/hacker@v0.2.0
 remote_theme: pages-themes/cayman@v0.2.0
