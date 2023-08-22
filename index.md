@@ -4,10 +4,13 @@ title: Student Blog
 ---
 
 
-## CSA Github Pages
+## Quick Overview
+
 Hello, I am Shaurya Goel, a Juinor at Del Norte High School.
 
-## Overview of Hacks, Study and Tangibles
+![Overview Picture](./pictures/image.png)
+
+## Useful Shortcuts
 
 Useful shortcuts:
 
