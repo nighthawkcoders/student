@@ -8,7 +8,8 @@ title: Student Blog
 Hello, I am Shaurya Goel, a Juinor at Del Norte High School.
 
 ## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
+
+Useful shortcuts:
 
 [Github](https://github.com/STG-7)
 
