@@ -5,7 +5,7 @@ title: Computer Science Principles
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
+        background-color: #ffffff;
     }
 
     .calculator {
@@ -24,7 +24,7 @@ title: Computer Science Principles
         margin-bottom: 15px;
         padding: 2px;
         font-size: 18px;
-        border: 1px solid #ccc;
+        border: 1px solid #cccccc;
         border-radius: 5px;
     }
 
@@ -37,14 +37,14 @@ title: Computer Science Principles
     button {
         padding: 10px;
         font-size: 18px;
-        background-color: #f5f5f5;
-        border: 1px solid #ccc;
+        background-color: #6897c1;
+        border: 1px solid #60499f93;
         border-radius: 5px;
         cursor: pointer;
     }
 
     button:hover {
-        background-color: #ddd;
+        background-color: #3e4447;
     }
 </style>
     
@@ -90,6 +90,7 @@ title: Computer Science Principles
         }
     }
     </script>
+</body>
 
 <script>
     function appendToDisplay(value) {
@@ -159,4 +160,3 @@ title: Computer Science Principles
     // ... more code ...
 
 </script>
-</body>

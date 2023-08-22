@@ -15,5 +15,5 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 
 
 ## This is my freeform picture!
-![Alt text](image-1.png)
+![Alt text](images/freeform.png)
 This picture describes who I am and what I love. I am Chinese and 3 things, listed in the picture, that I love are sports, my family, and my friends. Over the summer, I attended a research program and explored AI and Machine Learning. I specifically focused on Bert in NLP, which my research paper is on.
