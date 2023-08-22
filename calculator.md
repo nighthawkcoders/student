@@ -22,7 +22,7 @@ title: Computer Science Principles
     #display {
         width: 100%;
         margin-bottom: 15px;
-        padding: 10px;
+        padding: 2px;
         font-size: 18px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -90,4 +90,73 @@ title: Computer Science Principles
         }
     }
     </script>
+
+<script>
+    function appendToDisplay(value) {
+        document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+        document.getElementById('display').value = '';
+    }
+
+    function calculate() {
+        const displayValue = document.getElementById('display').value;
+        try {
+            const result = eval(displayValue);
+            document.getElementById('display').value = result;
+        } catch (error) {
+            document.getElementById('display').value = 'Error';
+        }
+    }
+
+    // Add event listeners for keyboard support
+    document.addEventListener('keydown', handleKeyPress);
+
+    function handleKeyPress(event) {
+        const key = event.key;
+
+        // Define key mapping
+        const keyMapping = {
+            '0': '0', '1': '1', '2': '2', '3': '3', '4': '4',
+            '5': '5', '6': '6', '7': '7', '8': '8', '9': '9',
+            '.': '.',
+            '+': '+', '-': '-', '*': '*', '/': '/',
+            'Enter': '=', 'Backspace': 'CE', 'Escape': 'C'
+        };
+
+        if (keyMapping.hasOwnProperty(key)) {
+            event.preventDefault(); // Prevent default behavior (e.g., scrolling)
+            const mappedAction = keyMapping[key];
+            performAction(mappedAction);
+        }
+    }
+
+    function performAction(action) {
+        const display = document.getElementById('display');
+
+        switch (action) {
+            case 'CE':
+                clearEntry();
+                break;
+            case 'C':
+                clearDisplay();
+                break;
+            case '=':
+                calculate();
+                break;
+            default:
+                appendToDisplay(action);
+        }
+    }
+
+    // Additional functions for CE and backspace
+    function clearEntry() {
+        const display = document.getElementById('display');
+        display.value = display.value.slice(0, -1); // Remove the last character
+    }
+
+    // ... more code ...
+
+</script>
 </body>
