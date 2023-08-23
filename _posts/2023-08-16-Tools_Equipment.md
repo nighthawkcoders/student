@@ -5,7 +5,7 @@ layout: post
 title: VSCode, Python, Jupyter, ...
 description: Tools and equipment setup for tools used throughout this class.
 courses: { csa: {week: 0} }
-type: hacks
+type: plans
 ---
 
 ## Hacks

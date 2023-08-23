@@ -1,20 +1,10 @@
 ---
-layout: post
-title: Linux Shell and Bash
-description: A Tech Talk on Linux and the Bash shell.
-toc: True
-comments: True
-categories: ['5.A', 'C4.1']
-type: devops
----
-
----
 toc: true
 comments: true
 layout: post
-title: Why I love Tools
-description: Build your first Blog.  This will help us communicate results.
-type: plans
+title: CSA Tools
+description: Why I love my tools
+type: hacks
 courses: { csa: {week: 0} }
 categories: [C1.4]
 ---
