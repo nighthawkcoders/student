@@ -1,15 +1,68 @@
-<header class="site-header">
-
-  <div id="header">
-    <nav>
-      <ul>
-        <li class="fork"><a href="{{site.baseurl}}/">Home</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/csse">CSSE</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/csp">CSP</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/csa">CSA</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
-        <li class="title"><a href="{{ site.github.repository_url }}#readme">View On GitHub</a></li>
-      </ul>
-    </nav>
-  </div><!-- end header -->
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #FFA500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Your Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <h1>Welcome to Our Website</h1>
+    <p>This is the content of the page.</p>
+  </section>
+</body>
+</html>
