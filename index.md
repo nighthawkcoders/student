@@ -18,7 +18,7 @@ Check out my [<span style="color:green">_Github page_</span>](https://github.com
 - Has lived in [<span style="color:orange">India</span>](https://www.youtube.com/watch?v=CNDI4WlJ8eo) for 8 years.
 - Loves to [<span style="color:red">watch __table tennis__</span>](https://www.youtube.com/@Pongfinity), and also plays it.
 - Best song in the world: [<span style="color:teal">***Click this link !!!***</span>](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-- Mario Kart Wii enthusiast.
+- Loves to play Mario Kart Wii.
 
 <!-- ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
