@@ -8,7 +8,7 @@ title: Student Blog
 
 Hello, I am Shaurya Goel, a Juinor at Del Norte High School.
 
-![Overview Picture](./pictures/image.PNG)
+![Overview Picture](image.PNG)
 
 ## Useful Shortcuts
 
