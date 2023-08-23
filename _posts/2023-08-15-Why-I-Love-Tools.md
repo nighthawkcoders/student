@@ -1,4 +1,14 @@
 ---
+layout: post
+title: Linux Shell and Bash
+description: A Tech Talk on Linux and the Bash shell.
+toc: True
+comments: True
+categories: ['5.A', 'C4.1']
+type: devops
+---
+
+---
 toc: true
 comments: true
 layout: post
