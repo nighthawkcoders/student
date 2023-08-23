@@ -5,7 +5,8 @@ description: A Tech Talk on Linux and the Bash shell.
 toc: True
 comments: True
 categories: ['5.A', 'C4.1']
-type: devops
+courses: { csa: {week: 0} }
+type: hacks
 ---
 
 ## Bash Tutorial
