@@ -5,7 +5,8 @@ description: A Tech Talk on Linux and the Bash shell.
 toc: True
 comments: True
 categories: ['5.A', 'C4.1']
-type: devops
+courses: { csa: {week: 0} }
+type: hacks
 ---
 
 ## Bash Tutorial
@@ -634,6 +635,10 @@ rm $file  # clean up termporary file
 ## Hack Preparation.
 > Review Tool Setup Procedures and think about some thing you could verify through a Shell notebook.
 - Come up with your own student view of this procedure to show your tools are installed.
+    - Install wsl through:
+    - |wsl --install|
+    - Through wsl, install Ubuntu
+    - Install VScode 
 - Name and create notes on some Linux commands you will use frequently.
 - Is there anything we use to verify tools we install? Review versions checks.
 - Is there anything we could verify with Anaconda?  or WSL?  
