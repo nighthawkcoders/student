@@ -5,8 +5,7 @@ description: A Tech Talk on Linux and the Bash shell.
 toc: True
 comments: True
 categories: ['5.A', 'C4.1']
-courses: { csa: {week: 0} }
-type: hacks
+type: devops
 ---
 
 ## Bash Tutorial
@@ -635,12 +634,55 @@ rm $file  # clean up termporary file
 ## Hack Preparation.
 > Review Tool Setup Procedures and think about some thing you could verify through a Shell notebook.
 - Come up with your own student view of this procedure to show your tools are installed.
-    - Install wsl through:
-    - |wsl --install|
-    - Through wsl, install Ubuntu
-    - Install VScode 
 - Name and create notes on some Linux commands you will use frequently.
 - Is there anything we use to verify tools we install? Review versions checks.
 - Is there anything we could verify with Anaconda?  or WSL?  
 - How would you update a repository?  Could you do that in script above?
 
+```
+Installing Ubuntu: 
+sudo apt update
+sudo apt upgrade -y
+
+Finding Ubuntu Version:
+lsb_release -a
+
+Getting Github Info:
+git config --global --get <user.name>
+git config --global --get <user.email>
+
+# User.name is your name in github while user.email is your email that you used to sign in into github.
+
+Testing/Installing Python:
+- "sudo apt install -y python3" will install python, resulting in the terminal "Installing Python..."
+- If python is installed, it will return "Python is already installed."
+- You may check the version through: "python3 --version"
+
+Testing Ruby:
+- Install ruby through "sudo apt install -y ruby-full build-essential zlib1g-dev"
+- If installed, it should state "Ruby is already installed."
+- To check the version, type "ruby -v"
+
+Testing Jupyter:
+- Use the command "sudo apt-get install -y jupyter-notebook" to install Jupyter
+- It should say "Jupyter is already installed" if Bundler is already installed
+- Check the version through "jupyter --version"
+
+Testing Bundler:
+- Use the command "gem install jekyll bundler" to install Bundler
+- It should say "Bundler is already installed" if Bundler is already installed
+
+Some Linux commands used for later usage: 
+ls: List files and directories in the current directory.
+cd: Change the current directory.
+pwd: Print the current working directory.
+cp: Copy files or directories.
+mv: Move or rename files or directories.
+rm: Remove files or directories.
+grep: Search for patterns in files.
+chmod: Change file permissions.
+top: Display system resource usage.
+df: Display disk space usage.
+ps: List currently running processes.
+cat: Display the contents of a file.
+```
