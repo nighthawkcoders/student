@@ -6,6 +6,7 @@ title: Student Blog
 
 ## Soham Kulkarni's Page 
 My name is Soham. A few things I like to do is to reading, play tennis, and code
+
 ![](images/about_me_picture_csp.png)
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
