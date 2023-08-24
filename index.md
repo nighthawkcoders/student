@@ -3,9 +3,11 @@ layout: default
 title: Hanlun's Blog
 ---
 
-This is Hanlun's blog, very cool fr
+This is Hanlun's AP CSP blog
 
-
+My Freeform picture:
+<br />
+<br />
 ![freeform]({{site.baseurl}}/images/freeform.png)
 
 This is my schedule for this trimester:
@@ -67,7 +69,7 @@ Here's a funny little calculator:
 </script>
 
 <br />
-Heres a game of tic tac toe
+Heres a game of tic tac toe :     
 <head>
   <title>Tic Tac Toe</title>
   <style>
