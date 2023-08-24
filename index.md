@@ -10,6 +10,9 @@ My Freeform picture:
 <br />
 ![freeform]({{site.baseurl}}/images/freeform.png)
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tdCN5ZP8Kfs?si=9odSQ-QoAPcgwqNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 This is my schedule for this trimester:
 
  <base target="_blank">
