@@ -1,0 +1,12 @@
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20230822-59812-1xsm6jz sitelibdir\=./.gem.20230822-59812-1xsm6jz clean
+
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20230822-59812-1xsm6jz sitelibdir\=./.gem.20230822-59812-1xsm6jz
+make: *** No rule to make target `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin21/ruby/config.h', needed by `ruby_http_parser.o'.  Stop.
+
+make failed, exit code 2

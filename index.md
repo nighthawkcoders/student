@@ -7,9 +7,6 @@ title: Student Blog
 
 Go to my [Github account](https://github.com/Nathaniel633) !!
 
-## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
+Hello, I'm Nathan. I was born and raised here in San Diego but I'm half Russian. I'm a sophomore at Del Norte and my biggest passion is gymnastics. I'm looking to pursure Gymnastics in college as a D1 athlete but I haven't really started to look yet. I want to pursure a carreer in entrepreneurship and technology, a combination of the both, however I haven't made a complete decision just yet. I value my education and I know that a background of computer science is very good skill to have for any field I decide to go into relating technology and software.
 
-- Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
-- [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
-- Tangibles or [Tangible Artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development)) are things you accumulate as a learner and coder. 
+<img src ="{{site.baseurl}}/images/Freeform.jpg" width = "400" height = "800">

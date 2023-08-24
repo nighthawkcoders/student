@@ -1,0 +1,19 @@
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/Users/nathano/.rbenv/versions/3.1.4/bin/ruby extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230822-62897-eu5wtd sitelibdir\=./.gem.20230822-62897-eu5wtd clean
+
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230822-62897-eu5wtd sitelibdir\=./.gem.20230822-62897-eu5wtd
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230822-62897-eu5wtd sitelibdir\=./.gem.20230822-62897-eu5wtd install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20230822-62897-eu5wtd
+
+current directory: /Users/nathano/vscode/student/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230822-62897-eu5wtd sitelibdir\=./.gem.20230822-62897-eu5wtd clean
