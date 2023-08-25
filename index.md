@@ -2,14 +2,23 @@
 layout: default
 title: Student Blog
 ---
+## **How to write code**
+Learning to code requires four core ideas.
+1. <mark> Variables</mark>  
+-These are specifc values to write code.
+2. <mark> Loops</mark>  
+-These are codes for repetition.
+3. <mark> Conditionals</mark>  
+-These are if/then statements used to specify options available in a situation.
+4. <mark> Functions</mark>  
+-These are words, numbers, or special characters in a particular combination which tells the computer how to perform a task.
 
+## Coding is done using computer languages such as Python, Javascript, Swift, Ruby, C#, etc.
+For example, Python writes variables in quotation marks such as: "1 2 3 4 5 6" or "Michael Jackson".
 
-## Build you Home Page here 
-This is about your journey. Start now!!!
+It also has functions such as \n (new line), \t (tab), and del (delete a variable)
 
-## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
+Python has if/else statements such as
 
-- Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
-- [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
-- Tangibles or [Tangible Artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development)) are things you accumulate as a learner and coder. 
+If(:"Selected variable =1") print ("2") 
+else print ("3")
