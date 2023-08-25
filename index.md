@@ -4,7 +4,7 @@ title: Hanlun's Blog
 ---
 <style> body { background-color: #121212; color: #ffffff; } </style>
 
-# <span style="color: white; font-size: 24px;">this is hanluns gigachad blog GEEGEE</span>
+# <span style="color: white; font-size: 24px;">Hanlun's Blog</span>
 
 
 My Freeform picture:
