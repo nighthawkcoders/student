@@ -2,8 +2,10 @@
 layout: default
 title: Hanlun's Blog
 ---
+<style> body { background-color: #121212; color: #ffffff; } </style>
 
-This is Hanlun's AP CSP blog
+# <span style="color: white; font-size: 24px;">this is hanluns gigachad blog GEEGEE</span>
+
 
 My Freeform picture:
 <br />
