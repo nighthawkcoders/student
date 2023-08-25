@@ -3,12 +3,76 @@ layout: blogs
 permalink: /blogs
 title: Soham's Blogs
 ---
+##### This is what I have been doing in CSP class
+
+
+<html>
+<head>
+    <title>Search Terms</title>
+    <script>
+        var terms = []; // Global array to store terms
+
+        function loadTerms() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "terms.txt", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var rawData = xhr.responseText;
+                    var lines = rawData.split("\n");
+                    for (var i = 0; i < lines.length; i++) {
+                        var termData = lines[i].split("=");
+                        terms.push(termData);
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        function searchTerms() {
+            var searchInput = document.getElementById("searchInput").value;
+            var resultOutput = document.getElementById("resultOutput");
+            var found = false;
+
+            for (var i = 0; i < terms.length; i++) {
+                if (searchInput === terms[i][0]) {
+                    found = true;
+                    resultOutput.innerText = "Definition:\n" + terms[i][1];
+                    break; // No need to continue searching if term is found
+                }
+            }
+
+            if (!found) {
+                resultOutput.innerText = "Sorry, we can't find that term. Make sure you have spelled your query correctly.";
+            }
+        }
+    </script>
+</head>
+<body onload="loadTerms()">
+    <h1>Search Terms</h1>
+    <input type="text" id="searchInput" placeholder="Enter your search">
+    <button onclick="searchTerms()">Search</button>
+    <div id="resultOutput"></div>
+</body>
+</html>
+
+ 
+ 
+## Super Quick Overview
+
+| Week | Accomplishments |
+| ----------- | ----------- |
+| 0 | Installed WSL, VSCode, and created github repo|
+| 1 |Set up website, commited changes to github|
+
+
 ## August 22th 2023 
 Committed the repository to github. And started working on my website.
 
 ### 1) Committing and Push
 
-a) I clicked source control on the right side of VSCode and committed all the changes. I also synce all the changes
+a) I clicked source control on the right side of VSCode and committed all the changes. I also synced all the changes
+
+b) I started working on my website
 
 ## August 21th, 2023
 Today I setup Jupyter notebook, Installed Gemfile dependencies, and started a server
@@ -126,7 +190,3 @@ Now I have VSCode and WSL working!
 
 
 
-| Week | Accomplishment |
-| ---- | -------------- |
-|  1   | Learnt about github |
-| 2    |             |
