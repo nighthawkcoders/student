@@ -8,9 +8,6 @@ image: /images/snake.png
 categories: [C4.9]
 tags: [javascript]
 ---
-
-{% include nav_frontend.html %}
-
 <style>
 
     body{
