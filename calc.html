@@ -11,53 +11,59 @@ title: Calculator
 function add() {
     const num1 = parseInt(document.getElementById("num1").value);
     const num2 = parseInt(document.getElementById("num2").value);
-    document.getElementById("sum").innerHTML = num1 + num2;
+    document.getElementById("result").innerHTML = num1 + num2;
 }
 function subtract() {
     const num1 = parseInt(document.getElementById("num1").value);
     const num2 = parseInt(document.getElementById("num2").value);
-    document.getElementById("sum").innerHTML = num1 - num2;
+    document.getElementById("result").innerHTML = num1 - num2;
 }
 function multiply() {
     const num1 = parseInt(document.getElementById("num1").value);
     const num2 = parseInt(document.getElementById("num2").value);
-    document.getElementById("sum").innerHTML = num1 * num2;
+    document.getElementById("result").innerHTML = num1 * num2;
 }
 function divide() {
     const num1 = parseInt(document.getElementById("num1").value);
     const num2 = parseInt(document.getElementById("num2").value);
-    document.getElementById("sum").innerHTML = num1 / num2;
+    document.getElementById("result").innerHTML = num1 / num2;
+}
+function exponent() {
+    const num1 = parseInt(document.getElementById("num1").value);
+    const num2 = parseInt(document.getElementById("num2").value);
+    document.getElementById("result").innerHTML = num1**num2;
 }
 </script>
 <style>    
     td {
       text-align: center;
     }
-    </style>
+</style>
 </head>
 <body>
 <h1 style="margin-left:20px">Calculator</h1>
 <table style="margin-left:20px">
+    <!-- First row with two input numbers -->
     <tr>
         <td colspan="2"><input type = "number" id="num1"></td>
+        <td></td>
         <td colspan="2" style="padding-left: 10px;"><input type = "number" id="num2"></td>
     </tr>
+    <!-- Second row with bunch of math button -->
     <tr>
         <td style="padding-top: 10px;padding-bottom: 10px;"><input type = "Button" id="add" value="Add" onclick="add()"></td>
         <td style="padding-top: 10px;padding-bottom: 10px;"><input type = "Button" id="add" value="Subtract" onclick="subtract()"></td>
         <td style="padding-top: 10px;padding-bottom: 10px;"><input type = "Button" id="add" value="Multiply" onclick="multiply()"></td>
         <td style="padding-top: 10px;padding-bottom: 10px;"><input type = "Button" id="add" value="Divide" onclick="divide()"></td>
+        <td style="padding-top: 10px;padding-bottom: 10px;"><input type = "Button" id="add" value="Exponent" onclick="exponent()"></td>
     </tr>
+    <!-- Results row -->
     <tr>
-        <td colspan="4" style="padding-top: 10px;padding-bottom: 10px;background-color: #D6EEEE;">Result = <span id="sum" style="font-weight: bold;"></span></td>
+        <td colspan="5" style="padding-top: 10px;padding-bottom: 10px;background-color: #D6EEEE;">Result = <span id="result" style="font-weight: bold;"></span></td>
     </tr>
 </table>
+<p style="margin-left:20px">
+    This code is an HTML web page that creates a simple calculator. It uses JavaScript functions for addition, subtraction, multiplication, and division based on input values. When you click the respective buttons, it calculates the result and displays it below the buttons. The calculator layout is made using an HTML table structure.
+</p>
 </body>
 </html>
-
-
-This code is an HTML web page that creates a simple calculator. It uses JavaScript functions for addition, subtraction, multiplication, and division based on input values. When you click the respective buttons, it calculates the result and displays it below the buttons. The calculator layout is made using an HTML table structure.
-
-
-
-
