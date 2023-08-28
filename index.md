@@ -16,4 +16,4 @@ I started Science Olympiad in seventh grade. However, I got eliminated from all 
 During my tenth grade year, however, we did Regionals physically. Del Norte came in second after several years!
 
 ## What it has taught me
-Participating in Science Olympiad has taught me how to work with others. I learned new stuff and how to work hard and plan. I feel overjoyed when I make the team and win a medal every year!! The medal makes it all worth it.
+Participating in Science Olympiad has taught me how to work with others. I learned new stuff and how to work hard and plan. I feel overjoyed when I make the team and win a medal every year!! The medal makes it worth all the hard work.
