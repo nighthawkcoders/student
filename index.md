@@ -4,6 +4,8 @@ layout: default
 title: My Science Olympiad Journey so far
 description: Blog about Science Olympiad
 ---
+remote_theme: pages-themes/modernist@v0.2.0
+
 ## What is Science Olympiad?
 Science Olympiad is a competition between teams from different middle schools and high schools. It includes physical science, earth science, life science, chemistry, environmental science and forestry. Build events and study events are both included. 
 
