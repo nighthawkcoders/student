@@ -6,6 +6,7 @@ type: tangibles
 courses: { csa: {week: 0} }
 categories: [C1.4]
 ---
+
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -16,22 +17,21 @@ categories: [C1.4]
         width: 280px;
         margin: 50px auto;
         padding: 20px;
-        border: 1px solid #ccc;
+        border: 1px solid #1a055193;
         border-radius: 5px;
-        background-color: #fff;
+        background-color: #ffb7c5;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
     }
 
     #display {
-        width: 100%;
+        width: 98%;
         margin-bottom: 15px;
         padding: 2px;
         font-size: 18px;
-        border: 1px solid #cccccc;
-        border-radius: 5px;
+        border: 1px solid #b8ffaa;
+        border-radius: 10px;
     }
-
     .button-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -41,14 +41,14 @@ categories: [C1.4]
     button {
         padding: 10px;
         font-size: 18px;
-        background-color: #6897c1;
-        border: 1px solid #60499f93;
+        background-color: #b8ffaa;
+        border: 1px solid #1a055193;
         border-radius: 5px;
         cursor: pointer;
     }
 
     button:hover {
-        background-color: #3e4447;
+        background-color: #6a9661;
     }
 </style>
     

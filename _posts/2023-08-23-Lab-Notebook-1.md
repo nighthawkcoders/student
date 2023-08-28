@@ -7,3 +7,5 @@ type: hacks
 courses: {'csa': {'week': 1}}
 ---
 
+# Java Hello
+
