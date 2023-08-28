@@ -2,23 +2,14 @@
 layout: default
 title: Student Blog
 ---
-## **How to write code**
-Learning to code requires four core ideas.
-1. <mark> Variables</mark>  
--These are specifc values to write code.
-2. <mark> Loops</mark>  
--These are codes for repetition.
-3. <mark> Conditionals</mark>  
--These are if/then statements used to specify options available in a situation.
-4. <mark> Functions</mark>  
--These are words, numbers, or special characters in a particular combination which tells the computer how to perform a task.
+## What is Science Olympiad?
+Science Olympiad is a competition between teams from different middle schools and high schools. It includes physical science, earth science, life science, chemistry, environmental science and forestry. Build events and study events are both included. 
 
-## Coding is done using computer languages such as Python, Javascript, Swift, Ruby, C#, etc.
-For example, Python writes variables in quotation marks such as: "1 2 3 4 5 6" or "Michael Jackson".
+## My Journey up to now
+I started Science Olympiad in seventh grade. However, I got eliminated from all of my events and didn't make the team. Next year, I tried harder and made the regional team. We went on to compete in the regional competition for Southern California. This was all during the pandemic and we had all the competitions online. During my freshman year, we had satellite competitions in which the competition was still held online, but we were physically doing the competition at the school site.
 
-It also has functions such as \n (new line), \t (tab), and del (delete a variable)
+## My tenth grade year
+During my tenth grade year, however, we did Regionals physically. Del Norte came in second after several years!
 
-Python has if/else statements such as
-
-If(:"Selected variable =1") print ("2") 
-else print ("3")
+## What it has taught me
+Participating in Science Olympiad has taught me how to work with others. I learned new stuff and how to work hard and plan. I feel overjoyed when I make the team and win a medal every year!! The medal makes it all worth it.
