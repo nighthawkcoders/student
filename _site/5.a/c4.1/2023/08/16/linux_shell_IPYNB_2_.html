@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Linux Shell and Bash | CompSci Blogs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Linux Shell and Bash" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Tech Talk on Linux and the Bash shell." />
+<meta property="og:description" content="A Tech Talk on Linux and the Bash shell." />
+<link rel="canonical" href="http://localhost:4000/student/5.a/c4.1/2023/08/16/linux_shell_IPYNB_2_.html" />
+<meta property="og:url" content="http://localhost:4000/student/5.a/c4.1/2023/08/16/linux_shell_IPYNB_2_.html" />
+<meta property="og:site_name" content="CompSci Blogs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-08-16T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linux Shell and Bash" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-08-16T00:00:00-07:00","datePublished":"2023-08-16T00:00:00-07:00","description":"A Tech Talk on Linux and the Bash shell.","headline":"Linux Shell and Bash","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/student/5.a/c4.1/2023/08/16/linux_shell_IPYNB_2_.html"},"url":"http://localhost:4000/student/5.a/c4.1/2023/08/16/linux_shell_IPYNB_2_.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/student/assets/css/style.css?v=38b94b2e34f290c96f7932520ccb8850add7fb27">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <script src="/student/assets/js/respond.js"></script>
+
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/student/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+</head><body>
+
+  <div class="wrapper">
+    <header><header class="site-header">
+
+  <div id="header">
+    <nav>
+      <ul>
+        <li class="fork"><a href="/student/">Home</a></li>
+        <li class="fork"><a href="/student/csse">CSSE</a></li>
+        <li class="fork"><a href="/student/csp">CSP</a></li>
+        <li class="fork"><a href="/student/csa">CSA</a></li>
+        <li class="fork"><a href="/student/blogs">Blogs</a></li>
+        <li class="title"><a href="https://github.com/AdityaSamavedam/student#readme">View On GitHub</a></li>
+      </ul>
+    </nav>
+  </div><!-- end header -->
+</header></header>
+
+
+    <section>
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 
+      class="post-title p-name" itemprop="name headline">Linux Shell and Bash
+      • <span class="read-time" title="Estimated read time">
+    
+    
+      60 min read
+    
+</span></h1>
+
+    <p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-08-16T00:00:00-07:00" itemprop="datePublished">
+        Aug 16, 2023
+      </time>
+    </p><h2>Description</h2><p class="page-description">A Tech Talk on Linux and the Bash shell.</p><ul><li><a href="#bash-tutorial">Bash Tutorial</a></li><li><a href="#variable-prerequisites">Variable Prerequisites</a><ul><li><a href="#define-variable">Define variable</a></li><li><a href="#output-the-value-of-a-variable">Output the value of a variable</a></li></ul></li><li><a href="#project-setup-and-analysis-with-bash-scripts">Project Setup and Analysis with Bash Scripts</a><ul><li><a href="#pull-code">Pull Code</a></li><li><a href="#look-at-files-github-project">Look at files Github project</a></li><li><a href="#look-at-file-list-with-hidden-and-long-attributes">Look at file list with hidden and long attributes</a></li><li><a href="#look-inside-a-markdown-file">Look inside a Markdown File</a></li></ul></li><li><a href="#env-git-and-github">Env, Git and GitHub</a></li><li><a href="#advanced-student-request---make-a-file-in-bash">Advanced Student Request - Make a file in Bash</a></li><li><a href="#hack-preparation">Hack Preparation.</a></li></ul></header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="bash-tutorial">Bash Tutorial</h2>
+<blockquote>
+  <p>A brief overview of Bash, on your way to becoming a Linux expert.  <mark>When a computer boots up, a kernel (MacOS, Windows, Linux) is started</mark>.  This kernel provides a shell, or <mark>terminal</mark>, that allows user to interact with a most basic set of commands.  Typically, the casual user will not interact with the shell/terminal as a Desktop User Interface is started by the computer boot up process.  To activate a shell directly, users will run a “terminal” through the Desktop. <mark>VS Code provides ability to activate "terminal"</mark> while in the IDE.</p>
+</blockquote>
+
+<h2 id="variable-prerequisites">Variable Prerequisites</h2>
+<blockquote>
+  <p>Setup bash shell dependency variables for this page.  Variables are one of the first aspects of programming.  <mark>Variables have "name" and a "value"</mark>.</p>
+</blockquote>
+
+<ul>
+  <li>Hack Note: Change variables to match your student project.</li>
+</ul>
+
+<h3 id="define-variable">Define variable</h3>
+<p>The following code cell <mark>defines 3 variables and assigns each a value</mark>.  There are some extra command, called a HERE document, that write these variables to a file.  This is so we can use these variables over and over below.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Dependency Variables, set to match your project directories
+</span>
+<span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+<span class="n">export</span> <span class="n">project_dir</span><span class="o">=</span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="n">vscode</span>  <span class="c1"># change vscode to different name to test git clone
+</span><span class="n">export</span> <span class="n">project</span><span class="o">=</span>\<span class="err">$</span><span class="n">project_dir</span><span class="o">/</span><span class="n">teacher</span>  <span class="c1"># change teacher to name of project from git clone
+</span><span class="n">export</span> <span class="n">project_repo</span><span class="o">=</span><span class="s">"https://github.com/nighthawkcoders/teacher.git"</span>  <span class="c1"># change to project of choice
+</span><span class="n">EOF</span>
+</code></pre></div></div>
+
+<h3 id="output-the-value-of-a-variable">Output the value of a variable</h3>
+<p>The following code cell <mark>outputs the value of the variables</mark>, using the echo command.  For visual understanding in the output, each echo command provide a title before the $variable</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="c1"># Output shown title and value variables
+</span><span class="n">echo</span> <span class="s">"Project dir: $project_dir"</span>
+<span class="n">echo</span> <span class="s">"Project: $project"</span>
+<span class="n">echo</span> <span class="s">"Repo: $project_repo"</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Project dir: /home/aditya/vscode
+Project: /home/aditya/vscode/teacher
+Repo: https://github.com/nighthawkcoders/teacher.git
+</code></pre></div></div>
+
+<h2 id="project-setup-and-analysis-with-bash-scripts">Project Setup and Analysis with Bash Scripts</h2>
+<p>The bash scripts that follow automate what was done in the setup procedures.  The purpose of this is to show that many of the commands we performed can be added to a script, then performed automatically.</p>
+
+<h3 id="pull-code">Pull Code</h3>
+<blockquote>
+  <p>Pull code from GitHub to your machine. This is a <mark>bash script</mark>, a sequence of commands, that will create a project directory and add the “project” from GitHub to the vscode directory.  There is conditional logic to make sure that clone only happen if it does not (!) exist.   Here are some key elements in this code…</p>
+</blockquote>
+
+<ul>
+  <li>cd command (change directory), remember this from terminal session</li>
+  <li>if statements (conditional statement, called selection statement by College Board), code inside only happens if condition is met</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">echo</span> <span class="s">"Using conditional statement to create a project directory and project"</span>
+
+<span class="n">cd</span> <span class="o">~</span>    <span class="c1"># start in home directory
+</span>
+<span class="c1"># Conditional block to make a project directory
+</span><span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project_dir</span> <span class="p">]</span>
+<span class="n">then</span> 
+    <span class="n">echo</span> <span class="s">"Directory $project_dir does not exists... makinng directory $project_dir"</span>
+    <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="err">$</span><span class="n">project_dir</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s">"Directory $project_dir exists."</span> 
+
+<span class="c1"># Conditional block to git clone a project from project_repo
+</span><span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s">"Directory $project does not exists... cloning $project_repo"</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">project_dir</span>
+    <span class="n">git</span> <span class="n">clone</span> <span class="err">$</span><span class="n">project_repo</span>
+    <span class="n">cd</span> <span class="o">~</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s">"Directory $project exists."</span> 
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Using conditional statement to create a project directory and project
+Directory /home/aditya/vscode exists.
+Directory /home/aditya/vscode/teacher exists.
+</code></pre></div></div>
+
+<h3 id="look-at-files-github-project">Look at files Github project</h3>
+<blockquote>
+  <p>All computers contain files and directories.  The clone brought more files from cloud to your machine.  Review the bash shell script, observe the commands that show and interact with files and directories.  These were used during setup.</p>
+</blockquote>
+
+<ul>
+  <li>“ls” lists computer files in Unix and Unix-like operating systems</li>
+  <li>“cd” offers way to navigate and change working directory</li>
+  <li>“pwd” print working directory</li>
+  <li>“echo” used to display line of text/string that are passed as an argument</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">echo</span> <span class="s">"Navigate to project, then navigate to area wwhere files were cloned"</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">pwd</span>
+
+<span class="n">echo</span> <span class="s">""</span>
+<span class="n">echo</span> <span class="s">"list top level or root of files with project pulled from github"</span>
+<span class="n">ls</span>
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Navigate to project, then navigate to area wwhere files were cloned
+/home/aditya/vscode/teacher
+
+list top level or root of files with project pulled from github
+Gemfile
+LICENSE
+Makefile
+README.md
+_config.yml
+_data
+_includes
+_layouts
+_notebooks
+_posts
+assets
+csa.md
+csp.md
+csse.md
+images
+index.md
+indexBlogs.md
+scripts
+</code></pre></div></div>
+
+<h3 id="look-at-file-list-with-hidden-and-long-attributes">Look at file list with hidden and long attributes</h3>
+<blockquote>
+  <p>Most linux commands have options to enhance behavior.  The enhanced listing below shows permission bits, owner of file, size and date.</p>
+</blockquote>
+
+<p><a href="https://www.rapidtables.com/code/linux/ls.html">ls reference</a></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">echo</span> <span class="s">"Navigate to project, then navigate to area wwhere files were cloned"</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">pwd</span>
+
+<span class="n">echo</span> <span class="s">""</span>
+<span class="n">echo</span> <span class="s">"list all files in long format"</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">al</span>   <span class="c1"># all files -a (hidden) in -l long listing
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Navigate to project, then navigate to area wwhere files were cloned
+/home/aditya/vscode/teacher
+
+list all files in long format
+total 100
+drwxr-xr-x 12 aditya aditya 4096 Aug 19 17:54 .
+drwxr-xr-x  4 aditya aditya 4096 Aug 19 18:06 ..
+drwxr-xr-x  8 aditya aditya 4096 Aug 19 17:54 .git
+drwxr-xr-x  3 aditya aditya 4096 Aug 19 17:54 .github
+-rw-r--r--  1 aditya aditya  157 Aug 19 17:54 .gitignore
+-rw-r--r--  1 aditya aditya  122 Aug 19 17:54 Gemfile
+-rw-r--r--  1 aditya aditya 1081 Aug 19 17:54 LICENSE
+-rw-r--r--  1 aditya aditya 3131 Aug 19 17:54 Makefile
+-rw-r--r--  1 aditya aditya 8036 Aug 19 17:54 README.md
+-rw-r--r--  1 aditya aditya  607 Aug 19 17:54 _config.yml
+drwxr-xr-x  2 aditya aditya 4096 Aug 19 17:54 _data
+drwxr-xr-x  2 aditya aditya 4096 Aug 19 17:54 _includes
+drwxr-xr-x  2 aditya aditya 4096 Aug 19 17:54 _layouts
+drwxr-xr-x  3 aditya aditya 4096 Aug 19 17:54 _notebooks
+drwxr-xr-x  2 aditya aditya 4096 Aug 19 17:54 _posts
+drwxr-xr-x  4 aditya aditya 4096 Aug 19 17:54 assets
+-rw-r--r--  1 aditya aditya   92 Aug 19 17:54 csa.md
+-rw-r--r--  1 aditya aditya   98 Aug 19 17:54 csp.md
+-rw-r--r--  1 aditya aditya  108 Aug 19 17:54 csse.md
+drwxr-xr-x  2 aditya aditya 4096 Aug 19 17:54 images
+-rw-r--r--  1 aditya aditya 5149 Aug 19 17:54 index.md
+-rw-r--r--  1 aditya aditya   53 Aug 19 17:54 indexBlogs.md
+drwxr-xr-x  2 aditya aditya 4096 Aug 19 17:54 scripts
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">echo</span> <span class="s">"Look for posts"</span>
+<span class="n">export</span> <span class="n">posts</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_posts</span>  <span class="c1"># _posts inside project
+</span><span class="n">cd</span> <span class="err">$</span><span class="n">posts</span>  <span class="c1"># this should exist per fastpages
+</span><span class="n">pwd</span>  <span class="c1"># present working directory
+</span><span class="n">ls</span> <span class="o">-</span><span class="n">l</span>  <span class="c1"># list posts
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Look for posts
+/home/aditya/vscode/teacher/_posts
+total 88
+-rw-r--r-- 1 aditya aditya  7685 Aug 19 17:54 2023-08-16-Tools_Equipment.md
+-rw-r--r-- 1 aditya aditya  4650 Aug 19 17:54 2023-08-16-pair_programming.md
+-rw-r--r-- 1 aditya aditya  7137 Aug 19 17:54 2023-08-17-markdown-html_fragments.md
+-rw-r--r-- 1 aditya aditya  6659 Aug 19 17:54 2023-08-23-javascript-calculator.md
+-rw-r--r-- 1 aditya aditya 10642 Aug 19 17:54 2023-08-30-agile_methodolgy.md
+-rw-r--r-- 1 aditya aditya  3849 Aug 19 17:54 2023-08-30-javascript-music-api.md
+-rw-r--r-- 1 aditya aditya  5312 Aug 19 17:54 2023-09-06-javascript-motion-mario-oop.md
+-rw-r--r-- 1 aditya aditya  4812 Aug 19 17:54 2023-09-13-java-free_response.md
+-rw-r--r-- 1 aditya aditya 13220 Aug 19 17:54 2023-10-16-java-api-pojo-jpa.md
+-rw-r--r-- 1 aditya aditya  6819 Aug 19 17:54 2023-11-13-jwt-java-spring.md
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">echo</span> <span class="s">"Look for notebooks"</span>
+<span class="n">export</span> <span class="n">notebooks</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_notebooks</span>  <span class="c1"># _notebooks is inside project
+</span><span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span>   <span class="c1"># this should exist per fastpages
+</span><span class="n">pwd</span>  <span class="c1"># present working directory
+</span><span class="n">ls</span> <span class="o">-</span><span class="n">l</span>  <span class="c1"># list notebooks
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Look for notebooks
+/home/aditya/vscode/teacher/_notebooks
+total 736
+-rw-r--r-- 1 aditya aditya  13014 Aug 19 17:54 2023-08-01-cloud_database.ipynb
+-rw-r--r-- 1 aditya aditya   8992 Aug 19 17:54 2023-08-01-mario_player.ipynb
+-rw-r--r-- 1 aditya aditya  43705 Aug 19 17:54 2023-08-02-cloud-workspace-automation.ipynb
+-rw-r--r-- 1 aditya aditya  22060 Aug 19 17:54 2023-08-03-mario_block.ipynb
+-rw-r--r-- 1 aditya aditya  11791 Aug 19 17:54 2023-08-03-mario_platform.ipynb
+-rw-r--r-- 1 aditya aditya  19450 Aug 19 17:54 2023-08-03-mario_tube.ipynb
+-rw-r--r-- 1 aditya aditya  24387 Aug 19 17:54 2023-08-04-mario_background.ipynb
+-rw-r--r-- 1 aditya aditya   3496 Aug 19 17:54 2023-08-07-mario_lesson.ipynb
+-rw-r--r-- 1 aditya aditya  10110 Aug 19 17:54 2023-08-15-java-hello.ipynb
+-rw-r--r-- 1 aditya aditya  21039 Aug 19 17:54 2023-08-16-github_pages_setup.ipynb
+-rw-r--r-- 1 aditya aditya  16156 Aug 19 17:54 2023-08-16-linux_shell.ipynb
+-rw-r--r-- 1 aditya aditya  11466 Aug 19 17:54 2023-08-16-python_hello.ipynb
+-rw-r--r-- 1 aditya aditya   9425 Aug 22 10:59 2023-08-23-github_pages_anatomy.ipynb
+-rw-r--r-- 1 aditya aditya  22668 Aug 19 17:54 2023-08-23-java-console_games.ipynb
+-rw-r--r-- 1 aditya aditya   9038 Aug 19 17:54 2023-08-23-python_tricks.ipynb
+-rw-r--r-- 1 aditya aditya  10152 Aug 19 17:54 2023-08-30-javascript_top_10.ipynb
+-rw-r--r-- 1 aditya aditya   9689 Aug 19 17:54 2023-08-30-showcase-S1-pair.ipynb
+-rw-r--r-- 1 aditya aditya   7192 Aug 19 17:54 2023-09-05-python-flask-anatomy.ipynb
+-rw-r--r-- 1 aditya aditya  22157 Aug 19 17:54 2023-09-06-AWS-deployment.ipynb
+-rw-r--r-- 1 aditya aditya  14380 Aug 19 17:54 2023-09-06-java-primitives.ipynb
+-rw-r--r-- 1 aditya aditya  11671 Aug 19 17:54 2023-09-06-javascript-input.ipynb
+-rw-r--r-- 1 aditya aditya  13706 Aug 19 17:54 2023-09-12-java_menu_class.ipynb
+-rw-r--r-- 1 aditya aditya   9562 Aug 19 17:54 2023-09-13-java_fibonaccii_class.ipynb
+-rw-r--r-- 1 aditya aditya  44217 Aug 19 17:54 2023-09-13-javascript_output.ipynb
+-rw-r--r-- 1 aditya aditya  43423 Aug 19 17:54 2023-09-13-python-pandas_intro.ipynb
+-rw-r--r-- 1 aditya aditya  11578 Aug 19 17:54 2023-09-20-java-image_2D.ipynb
+-rw-r--r-- 1 aditya aditya  26739 Aug 19 17:54 2023-09-20-javascript_motion_dog.ipynb
+-rw-r--r-- 1 aditya aditya  13599 Aug 19 17:54 2023-10-02-java-spring-anatomy.ipynb
+-rw-r--r-- 1 aditya aditya  12429 Aug 19 17:54 2023-10-09-java-chatgpt.ipynb
+-rw-r--r-- 1 aditya aditya  15632 Aug 19 17:54 2023-10-09-javascript_api.ipynb
+-rw-r--r-- 1 aditya aditya 113091 Aug 19 17:54 2023-10-09-python_machine_learing_fitness.ipynb
+-rw-r--r-- 1 aditya aditya  16271 Aug 19 17:54 2023-11-13-jwt-python-flask.ipynb
+-rw-r--r-- 1 aditya aditya  15951 Aug 19 17:54 2023-11-13-vulnerabilities.ipynb
+-rw-r--r-- 1 aditya aditya  18328 Aug 19 17:54 2023-11-20-jwt-java-spring-challenge.md
+-rw-r--r-- 1 aditya aditya  10745 Aug 19 17:54 2024-01-04-cockpit-setup.ipynb
+drwxr-xr-x 2 aditya aditya   4096 Aug 19 17:54 files
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">echo</span> <span class="s">"Look for images in notebooks, print working directory, list files"</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span><span class="o">/</span><span class="n">images</span>  <span class="c1"># this should exist per fastpages
+</span><span class="n">pwd</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Look for images in notebooks, print working directory, list files
+/home/aditya/vscode/student/_notebooks
+total 40
+-rw-r--r-- 1 aditya aditya 16156 Aug 22 16:04 2023-08-16-linux_shell.ipynb
+-rw-r--r-- 1 aditya aditya  5415 Aug 19 18:06 2023-08-17-AP-pseudo-vs-python.ipynb
+-rw-r--r-- 1 aditya aditya  8615 Aug 19 18:06 2023-08-21-VSCode-GitHub_Pages.ipynb
+-rw-r--r-- 1 aditya aditya   803 Aug 22 16:52 git-error-1692745967886
+
+
+bash: line 6: cd: /images: No such file or directory
+</code></pre></div></div>
+
+<h3 id="look-inside-a-markdown-file">Look inside a Markdown File</h3>
+<blockquote>
+  <p>“cat” reads data from the file and gives its content as output</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">echo</span> <span class="s">"Navigate to project, then navigate to area wwhere files were cloned"</span>
+
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">echo</span> <span class="s">"show the contents of README.md"</span>
+<span class="n">echo</span> <span class="s">""</span>
+
+<span class="n">cat</span> <span class="n">README</span><span class="p">.</span><span class="n">md</span>  <span class="c1"># show contents of file, in this case markdown
+</span><span class="n">echo</span> <span class="s">""</span>
+<span class="n">echo</span> <span class="s">"end of README.md"</span>
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Navigate to project, then navigate to area wwhere files were cloned
+show the contents of README.md
+
+## Teacher Blog site
+This site is intended for the development of Teacher content.  This blogging site is built using GitHub Pages [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+- The purpose is to build lessons and distribute across different Computer Science sections (CSSE, CSP, CSA), a pathway that covers 3 years of High School Instruction.
+- The primary languages and frameworks that are taught are `JavaScript/HTML/CSS`, `Python/Flask`, `Java/Spring`.  Read below for more details.
+- In this course, Teacher content is not exclusively developed by Teachers.  In fact, many Students have been invited to develop and publish content into this repository.  Their names will appear as authors on the content which they aided in producing.
+- This site has incorporated ideas and has radically modified scripts from the now deprecated [fastpages](https://github.com/fastai/fastpages) repository.
+- This site includes assistance and guideance from ChatGPT, [chat.openai.com](https://chat.openai.com/) 
+
+### Courses and Pathway
+The focus of the Del Norte Computer Science three-year pathway is `Full Stack Web Development`.  This focus provides a variety of technologies and exposures.  The intention of the pathway is breadth and exposure.
+- `JavaScript` documents are focused on frontend development and for entry class into the Del Norte Computer Science pathway.  JavaScript documents and materials are a prerequisites to Python and Java classes.
+- `Python` documents are focused on backend development and requirements for the AP Computer Science Principles exam.
+- `Java` documents are focused on backend development and requirements for the AP Computer Sciene A exam.
+- `Data Structures` materials embedded into JavaScript, Python, or Java documents are focused on college course articulation.
+
+### Resources and Instruction
+The materials, such as this README, as well as `Tools`, `DevOps`, and `Collaboration` resources are integral part of this course and Computer Science in general.  Everything in our environment is part of our learning of Computer Science. 
+- `Visual Studio Code` is key the code-build-debug cycle editor used in this course, [VSCode download](https://code.visualstudio.com/).  This is an example of a resource, but inside of it it has features for collaboration.
+- `Tech Talks`, aka lectures, are intended to be interactive and utilize `Jupyter Notebooks` and Websites.  This is an example of blending instruction and tools together, which in turn provide additional resources for learning.  For instance, deep knowledge on  GitHub Pages and Notebooks are valuable in understanding principles behind Full Stack Development and Data Science. 
+
+## GitHub Pages
+All `GitHub Pages` websites are managed on GitHub infrastructure. GitHub uses `Jekyll` to tranform your content into static websites and blogs. Each time we change files in GitHub it initiates a GitHub Action that rebuilds and publishes the site with Jekyll.  
+- GitHub Pages is powered by: [Jekyll](https://jekyllrb.com/).
+- Publised teacher website: [nighthawkcoders.github.io/teacher](https://nighthawkcoders.github.io/teacher/)
+
+## Preparing a Preview Site 
+In all development, it is recommended to test your code before deployment.  The GitHub Pages development process is optimized by testing your development on your local machine, prior to files on GitHub
+
+Development Cycle. For GitHub pages, the tooling described below will create a development cycle  `make-code-save-preview`.  In the development cycle, it is a requirement to preview work locally, prior to doing a VSCode `commit` to git.
+
+Deployment Cycle.  In the deplopyment cycle, `sync-github-action-review`, it is a requirement to complete the development cycle prior to doing a VSCode `sync`.  The sync triggers github repository update.  The action starts the jekyll build to publish the website.  Any step can have errors and will require you to do a review.
+
+### WSL and/or Ubuntu installation requirements
+- The result of these step is Ubuntu tools to run preview server.  These procedures were created using [jekyllrb.com](https://jekyllrb.com/docs/installation/ubuntu/)
+```bash
+# Ubuntu requirements
+#
+echo "=== Install Ruby ==="
+# sudo apt install. installs packages for Ubuntu
+sudo apt install ruby-full build-essential zlib1g-dev -y
+# the following "echo" commands adds gems installation directory into the .bashrc file, avoiding root requirements
+echo '# Install Ruby Gems to ~/gems' &gt;&gt; ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' &gt;&gt; ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' &gt;&gt; ~/.bashrc
+#
+echo "=== Install Jekyl ==="
+gem install jekyll bundler
+#
+echo "=== Install Conda ==="
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86.sh -O /tmp/miniconda.sh
+chmod +x /tmp/miniconda.sh
+/tmp/miniconda.sh -b -p $HOME/miniconda
+# Configure ruby into shell
+# source the .bashrc file or relanuch terminal
+# update conda
+~/miniconda/bin/conda update -n base -y -c defaults conda
+~/miniconda/bin/conda install -y -c conda-forge pyyam
+echo "=== Activate Conda  ==="
+source ~/.bashrc
+```
+
+### MacOs installation requirements 
+- Ihe result of these step are MacOS tools to run preview server.  These procedures were created using [jekyllrb.com](https://jekyllrb.com/docs/installation/macos/)
+```bash
+# ruby
+# MacOS commands
+#
+# Install Ruby for MacOS
+brew install chruby ruby-install xz
+ruby-install ruby 3.1.3
+# Configure ruby into shell using .zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" &gt;&gt; ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" &gt;&gt; ~/.zshrc
+echo '# Install Ruby Gems to ~/gems' &gt;&gt; ~/.zshrc
+echo 'export GEM_HOME="$HOME/gems"' &gt;&gt; ~/.zshrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' &gt;&gt; ~/.zshrc
+#
+# install conda for MacOS
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O /tmp/miniconda.sh
+bash /tmp/miniconda.sh -b -p $HOME/miniconda
+#
+# source the .zshrc file or relanuch terminal
+source ~/.zshrc
+#
+# update conda
+conda update -n base -y -c defaults conda
+#
+# Install local build tools
+gem install jekyll bundler
+#
+conda install -y -c conda-forge pyyam
+# install jekyll
+gem install jekyll bundler
+```
+
+### Preview
+- The result of these step is server running on: http://0.0.0.0:4100/teacher/.  Regeneration messages will run in terminal on any save.  Press the Enter or Return key in the terminal at any time to enter commands.
+
+- Complete installation
+```bash
+bundle install
+```
+- Run Server.  This requires running terminal commands `make`, `make stop`, `make clean`, or `make convert` to manage the running server.  Logging of details will appear in terminal.   A `Makefile` has been created in project to support commands and start processes.
+
+    - Start preview server in terminal
+    ```bash
+    cd ~/vscode/teacher  # my project location, adapt as necessary
+    make
+    ```
+
+    - Terminal output of shows server address. Cmd or Ctl click http location to open preview server in browser. Example Server address message... 
+    ```
+    Server address: http://0.0.0.0:4100/teacher/
+    ```
+
+    - Save on ipynb or md activiates "regeneration". Refresh browser to see updates. Example terminal message...
+    ```
+    Regenerating: 1 file(s) changed at 2023-07-31 06:54:32
+        _notebooks/2024-01-04-cockpit-setup.ipynb
+    ```
+
+    - Terminal message are generated from background processes.  Click return or enter to obtain prompt and use terminal as needed for other tasks.  Alway return to root of project `cd ~/vscode/teacher` for all "make" actions. 
+        
+
+    - Stop preview server, but leave constructed files in project for your review.
+    ```bash
+    make stop
+    ```
+
+    - Stop server and "clean" constructed files, best choice when renaming files to eliminate potential duplicates in constructed files.
+    ```bash
+    make clean
+    ```
+
+    - Test notebook conversions, best choice to see if IPYNB conversion is acting up.
+    ```bash
+    make convert
+    ```
+    
+
+end of README.md
+</code></pre></div></div>
+
+<h2 id="env-git-and-github">Env, Git and GitHub</h2>
+<blockquote>
+  <p>Env(ironment) is used to capture things like path to Code or Home directory.  Git and GitHub is NOT Only used to exchange code between individuals, it is often used to exchange code through servers, in our case deployment for Website.   All tools we use have a behind the scenes relationships with the system they run on (MacOS, Windows, Linus) or a relationship with servers which they are connected to (ie GitHub).  There is an “env” command in bash.  There are environment files and setting files (.git/config) for Git.  They both use a key/value concept.</p>
+</blockquote>
+
+<ul>
+  <li>“env” show setting for your shell</li>
+  <li>“git clone” sets up a director of files</li>
+  <li>“cd $project” allows user to move inside that directory of files</li>
+  <li>“.git” is a hidden directory that is used by git to establish relationship between machine and the git server on GitHub.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># This command has no dependencies
+</span>
+<span class="n">echo</span> <span class="s">"Show the shell environment variables, key on left of equal value on right"</span>
+<span class="n">echo</span> <span class="s">""</span>
+
+<span class="n">env</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Show the shell environment variables, key on left of equal value on right
+
+SHELL=/bin/bash
+PYTHONUNBUFFERED=1
+WSL2_GUI_APPS_ENABLED=1
+WSL_DISTRO_NAME=Ubuntu
+ELECTRON_RUN_AS_NODE=1
+VSCODE_AMD_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
+NAME=DESKTOP-69M4P4C
+PWD=/home/aditya/vscode/student/_notebooks
+LOGNAME=aditya
+PYDEVD_IPYTHON_COMPATIBLE_DEBUGGING=1
+HOME=/home/aditya
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/48078_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+WAYLAND_DISPLAY=wayland-0
+CLICOLOR=1
+VSCODE_L10N_BUNDLE_LOCATION=
+GEM_HOME=/home/aditya/gems
+LESSCLOSE=/usr/bin/lesspipe %s %s
+VSCODE_HANDLES_SIGPIPE=true
+TERM=xterm-color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=aditya
+GIT_PAGER=cat
+PYTHONIOENCODING=utf-8
+DISPLAY=:0
+SHLVL=1
+PAGER=cat
+VSCODE_CWD=/mnt/c/Users/Aditya/AppData/Local/Programs/Microsoft VS Code
+MPLBACKEND=module://matplotlib_inline.backend_inline
+XDG_RUNTIME_DIR=/run/user/1000/
+WSLENV=VSCODE_WSL_EXT_LOCATION/up
+VSCODE_WSL_EXT_LOCATION=/mnt/c/Users/Aditya/.vscode/extensions/ms-vscode-remote.remote-wsl-0.81.0
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/bin:/home/aditya/.local/bin:/home/aditya/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/remote-cli:/home/aditya/gems/bin:/home/aditya/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/Aditya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2022.3/bin:/mnt/c/Users/Aditya/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/aditya/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/remote-cli:/home/aditya/gems/bin:/home/aditya/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/Aditya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2022.3/bin:/mnt/c/Users/Aditya/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+VSCODE_NLS_CONFIG={"locale":"en","osLocale":"en","availableLanguages":{}}
+HOSTTYPE=x86_64
+PULSE_SERVER=unix:/mnt/wslg/PulseServer
+VSCODE_HANDLES_UNCAUGHT_ERRORS=true
+VSCODE_IPC_HOOK_CLI=/run/user/1000/vscode-ipc-ba47504d-b801-4071-b8f8-18c72fb2d486.sock
+_=/bin/env
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># Extract saved variables
+</span><span class="n">source</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">variables</span><span class="p">.</span><span class="n">sh</span>
+
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+
+<span class="n">echo</span> <span class="s">""</span>
+<span class="n">echo</span> <span class="s">"show the secrets of .git"</span>
+<span class="n">cd</span> <span class="p">.</span><span class="n">git</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
+
+<span class="n">echo</span> <span class="s">""</span>
+<span class="n">echo</span> <span class="s">"look at config file"</span>
+<span class="n">cat</span> <span class="n">config</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>show the secrets of .git
+total 52
+-rw-r--r-- 1 aditya aditya    21 Aug 19 17:54 HEAD
+drwxr-xr-x 2 aditya aditya  4096 Aug 19 17:53 branches
+-rw-r--r-- 1 aditya aditya   267 Aug 19 17:54 config
+-rw-r--r-- 1 aditya aditya    73 Aug 19 17:53 description
+drwxr-xr-x 2 aditya aditya  4096 Aug 19 17:53 hooks
+-rw-r--r-- 1 aditya aditya 11606 Aug 19 17:54 index
+drwxr-xr-x 2 aditya aditya  4096 Aug 19 17:53 info
+drwxr-xr-x 3 aditya aditya  4096 Aug 19 17:54 logs
+drwxr-xr-x 4 aditya aditya  4096 Aug 19 17:53 objects
+-rw-r--r-- 1 aditya aditya   112 Aug 19 17:54 packed-refs
+drwxr-xr-x 5 aditya aditya  4096 Aug 19 17:54 refs
+
+look at config file
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/nighthawkcoders/teacher.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+</code></pre></div></div>
+
+<h2 id="advanced-student-request---make-a-file-in-bash">Advanced Student Request - Make a file in Bash</h2>
+<blockquote>
+  <p>This example was requested by a student (Jun Lim, CSA). The request was to make jupyer file using bash, I adapted the request to markdown.  This type of thought will have great extrapolation to coding and possibilities of using List, Arrays, or APIs to build user interfaces.  JavaScript is a language where building HTML is very common.</p>
+</blockquote>
+
+<blockquote>
+  <p>To get more interesting output from terminal, this will require using something like mdless (https://github.com/ttscoff/mdless).  This enables see markdown in rendered format.</p>
+  <ul>
+    <li>On Desktop <a href="https://www.macports.org/install.php">Install PKG from MacPorts</a></li>
+    <li>In Terminal on MacOS
+      <ul>
+        <li><a href="https://ports.macports.org/port/ncurses/">Install ncurses</a></li>
+        <li><code class="language-plaintext highlighter-rouge">gem install mdless</code></li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>Output of the example is much nicer in “jupyter”</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">script</span> <span class="n">bash</span>
+
+<span class="c1"># This example has error in VSCode, it run best on Jupyter
+</span><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span>
+
+<span class="nb">file</span><span class="o">=</span><span class="s">"sample.md"</span>
+<span class="k">if</span> <span class="p">[</span> <span class="o">-</span><span class="n">f</span> <span class="s">"$file"</span> <span class="p">];</span> <span class="n">then</span>
+    <span class="n">rm</span> <span class="err">$</span><span class="nb">file</span>
+<span class="n">fi</span>
+
+<span class="n">tee</span> <span class="o">-</span><span class="n">a</span> <span class="err">$</span><span class="nb">file</span> <span class="o">&gt;/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span>
+<span class="c1"># Show Generated Markdown
+</span><span class="n">This</span> <span class="n">introductory</span> <span class="n">paragraph</span> <span class="ow">and</span> <span class="n">this</span> <span class="n">line</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">title</span> <span class="n">above</span> <span class="n">are</span> <span class="n">generated</span> <span class="n">using</span> <span class="n">tee</span> <span class="k">with</span> <span class="n">the</span> <span class="n">standard</span> <span class="nb">input</span> <span class="p">(</span><span class="o">&lt;&lt;</span><span class="p">)</span> <span class="n">redirection</span> <span class="n">operator</span><span class="p">.</span>
+<span class="o">-</span> <span class="n">This</span> <span class="n">bulleted</span> <span class="n">element</span> <span class="ow">is</span> <span class="n">still</span> <span class="n">part</span> <span class="n">of</span> <span class="n">the</span> <span class="n">tee</span> <span class="n">body</span><span class="p">.</span>
+<span class="n">EOF</span>
+
+<span class="n">echo</span> <span class="s">"- This bulleted element and lines below are generated using echo with standard output (&gt;&gt;) redirection operator."</span> <span class="o">&gt;&gt;</span> <span class="err">$</span><span class="nb">file</span>
+<span class="n">echo</span> <span class="s">"- The list definition, as is, is using space to seperate lines.  Thus the use of commas and hyphens in output."</span> <span class="o">&gt;&gt;</span> <span class="err">$</span><span class="nb">file</span>
+<span class="n">actions</span><span class="o">=</span><span class="p">(</span><span class="s">"ls,list-directory"</span> <span class="s">"cd,change-directory"</span> <span class="s">"pwd,present-working-directory"</span> <span class="s">"if-then-fi,test-condition"</span> <span class="s">"env,bash-environment-variables"</span> <span class="s">"cat,view-file-contents"</span> <span class="s">"tee,write-to-output"</span> <span class="s">"echo,display-content-of-string"</span> <span class="s">"echo_text_&gt;\$file,write-content-to-file"</span> <span class="s">"echo_text_&gt;&gt;\$file,append-content-to-file"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="err">$</span><span class="p">{</span><span class="n">actions</span><span class="p">[</span><span class="o">@</span><span class="p">]};</span> <span class="n">do</span>  <span class="c1"># for loop is very similar to other language, though [@], semi-colon, do are new
+</span>  <span class="n">action</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">action</span><span class="o">//-/</span> <span class="p">}</span>  <span class="c1"># convert dash to space
+</span>  <span class="n">action</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">action</span><span class="o">//</span><span class="p">,</span><span class="o">/</span><span class="p">:</span> <span class="p">}</span> <span class="c1"># convert comma to colon
+</span>  <span class="n">action</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">action</span><span class="o">//</span><span class="n">_text_</span><span class="o">/</span> \<span class="s">"sample text</span><span class="se">\"</span><span class="s"> } # convert _text_ to sample text, note escape character \ to avoid "" having meaning
+  echo "</span>    <span class="o">-</span> <span class="err">$</span><span class="p">{</span><span class="n">action</span><span class="o">//-/</span> <span class="p">}</span><span class="s">" &gt;&gt; $file  # echo is redirected to file with &gt;&gt;
+done
+
+echo ""
+echo "</span><span class="n">File</span> <span class="n">listing</span> <span class="ow">and</span> <span class="n">status</span><span class="s">"
+ls -l $file # list file
+wc $file   # show words
+mdless $file  # this requires installation, but renders markown from terminal
+
+rm $file  # clean up termporary file
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File listing and status
+-rw-r--r-- 1 aditya aditya 809 Aug 22 17:21 sample.md
+ 15 132 809 sample.md
+
+
+bash: line 30: mdless: command not found
+</code></pre></div></div>
+
+<h2 id="hack-preparation">Hack Preparation.</h2>
+<blockquote>
+  <p>Review Tool Setup Procedures and think about some thing you could verify through a Shell notebook.</p>
+  <ul>
+    <li>Come up with your own student view of this procedure to show your tools are installed.  It is best that you keep the few things you understand, add things later as you start to understand them.</li>
+    <li>Name and create blog notes on some Linux commands you will use frequently.</li>
+    <li>Is there anything we use to verify tools we installed? Review versions?</li>
+    <li>How would you update a repository?  Use the git command line?</li>
+  </ul>
+</blockquote>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="nighthawkcoders/student"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/student/5.a/c4.1/2023/08/16/linux_shell_IPYNB_2_.html" hidden></a>
+</article>
+
+    </section>
+
+  </div>
+</body>
+
+
+</html>
