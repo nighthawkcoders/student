@@ -1,5 +1,3 @@
-# MY NAME IS NATHAN AND I SUFFER FROM MENTAL RETARDATION
-
 
 ## Blog site using GitHub Pages and Jekyll
 > This site is intended for Students.   This is to record plans, complete hacks, and do work for your learnings.
