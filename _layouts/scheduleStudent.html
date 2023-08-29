@@ -4,6 +4,8 @@ layout: base
 
 {%comment%} 
 Setup course data
+    - Extract data by course
+    - Within course create units
 {%endcomment%}
 
 {% assign course = site.data[page.course] %} <!-- Load YML data -->
@@ -12,7 +14,7 @@ Setup course data
 <br>
 
 {%comment%} 
-Load all posts
+Load all posts with site
 {%endcomment%}
 
 {% assign posts = null | compact %}
@@ -23,37 +25,26 @@ Load all posts
 {%endcomment%}
 
 {% for unit in units %}
-{% assign unitKey = "Sprint" | append: unit %}
+{% assign unitKey = "Unit" | append: unit %}
 {% assign unitData = course[unitKey] %}
 <h2>
   {{ unitKey }}: {{ unitData.title }}
 </h2>
 <p>  {{ unitData.description }} </p>
 
-{% if unitData.illustration %}
-<details>
-  <summary>Illustration</summary>
-
-  <pre>
-    <p>{{ unitData.illustration }}</p>
-  </pre>
-</details>
-<br/>
-{% endif %}
-
 {% assign start = unitData.start %}
 {% assign end = unitData.end %}
 
 {%comment%} 
-<!-- Column Headings for Blogs -->
+<!-- Output Column Headings for Blogs -->
 {%endcomment%}
 
 <table>
   <tr>
     <th>Week</th>
-    <th>Code, Code, Code</th>
-    <th>Tools and DevOps</th>
-    <th>Collaboration</th>
+    <th>Plans</th>
+    <th>Hacks(Todo)</th>
+    <th>Tangibles</th>
   </tr>
 
   {%comment%} 
@@ -69,10 +60,10 @@ Load all posts
   {% assign deli = sym | compact %} 
 
   {% for index in (start..end) -%}
-    {% assign ccc = null | compact %}
-    {% assign devops = null | compact %}
-    {% assign collab = null | compact %}
-    {% assign uk = null | compact %}
+    {% assign plans = null | compact %}
+    {% assign hacks = null | compact %}
+    {% assign tangibles = null | compact %}
+
 
   {%comment%} 
   <!-- looping through all posts -->
@@ -83,7 +74,7 @@ Load all posts
   {%comment%} 
   <!-- prepare data blog post data for evaluation -->
   {%endcomment%}
-        {% assign week = post.courses[page.course].week | plus: 0 %}
+        {% assign week = post.courses[page.course].week | tangibles: 0 %}
         {% assign title = post.title | compact %}
         {% assign url = post.url | compact %}
   
@@ -95,15 +86,15 @@ Load all posts
   {%comment%} 
   <!-- organizing blogs by type -->
   {%endcomment%}
-          {% if post.type == "ccc" %}
-              {% assign ccc = ccc | unshift: title %}
-              {% assign ccc = ccc | unshift: url %}  
-          {% elsif post.type == "devops" %}
-              {% assign devops = devops | unshift: title %}
-              {% assign devops = devops | unshift: url %} 
-          {% elsif post.type == "collab" %}
-              {% assign collab = collab | unshift: title %}
-              {% assign collab = collab | unshift: url %} 
+          {% if post.type == "plans" %} 
+              {% assign plans = plans | unshift: title %}
+              {% assign plans = plans | unshift: url %}
+          {% elsif post.type == "hacks" %}
+              {% assign hacks = hacks | unshift: title %}
+              {% assign hacks = hacks | unshift: url %} 
+          {% elsif post.type == "tangibles" %}
+              {% assign tangibles = tangibles | unshift: title %}
+              {% assign tangibles = tangibles | unshift: url %} 
           {% else %}
               {% assign uk = uk | unshift: title %}
               {% assign uk = uk | unshift: url %}     
@@ -116,15 +107,15 @@ Load all posts
   {%comment%} 
   <!-- ordering units and inserting column delimiters -->
   {%endcomment%}
-  {% assign units = units | concat:ccc | concat:deli | concat:devops | concat:deli | concat:collab %}
+  {% assign units = units | concat:plans | concat:deli | concat:hacks | concat:deli | concat:tangibles  %}
 
   {%comment%} 
-  <!-- Forever Loop with base condition break processes units and build html for each type-->
+  <!-- This Loop is maximum iterationss, since elements are pairs it will decrement a extra times at the end -->
   {%endcomment%}
   <tr>
   <td> {{ index }} </td> 
   <td>
-  {% for i in (0..100) -%} 
+  {% for i in (0..units.size) -%} 
     {% if units.size == 0 %}
       {% break %}
     {% elsif units[0] == sym %} <!-- make new column -->
