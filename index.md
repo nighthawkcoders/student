@@ -11,7 +11,7 @@ Check out my [<span style="color:green">_Github page_</span>](https://github.com
 ### My freeform picture:
 ![freeformpic](/images/Freeform Picture.png)
 
-### About me:
+### About me:e
 - Sophomore at [<span style="color:cyan">__Del Norte High School__</span>](https://en.wikipedia.org/wiki/Del_Norte_High_School_(San_Diego)).
 - <span style="color:magenta">***First degree black belt in Taekwondo***</span>
 - Codes mostly in <span style="color:yellow">__Python__</span>, has worked with AI/ML.
