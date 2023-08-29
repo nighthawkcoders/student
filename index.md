@@ -34,7 +34,6 @@ Check out my [<span style="color:green">_Github page_</span>](https://github.com
 `whoami`
 `cat`
 `man`
-`person`
 
 <!-- ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
