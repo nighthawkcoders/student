@@ -25,7 +25,7 @@ Available kernels:
 > College Boards Units #1, #3, and #4 and Free Response Methods and Control Structures are built into these labs.  Of course, these games are very popular in beginning programming.  They are here for reference, as they were shared by a student.
 
 
-```Java
+```java
 import java.util.Scanner; //library for user input
 import java.lang.Math; //library for random numbers
 
@@ -393,124 +393,12 @@ ConsoleGame.main(null);
     
     Choose an option.
     
-    Rock Paper Scissors
-    java.util.InputMismatchException: Not a number, try again.
-    [35m___________________________
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    |[0m          Menu!          [35m|
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    | 0 - Exit                |
-    | 1 - Rock Paper Scissors |
-    | 2 - Higher or Lower     |
-    | 3 - Tic Tac Toe         |
-    |_________________________|   [0m
-    
-    Choose an option.
-    
     1
     1: Rock Paper Scissors
     Type r for rock, p for paper, or s for scissors
-    r
-    You chose rock 
+    s
+    You chose scissors 
     The computer chose scissors 
-    You win!
-    [0m
-    [35m___________________________
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    |[0m          Menu!          [35m|
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    | 0 - Exit                |
-    | 1 - Rock Paper Scissors |
-    | 2 - Higher or Lower     |
-    | 3 - Tic Tac Toe         |
-    |_________________________|   [0m
-    
-    Choose an option.
-    
-    3
-    3: Tic Tac Toe
-    Do you want to play against a friend or the computer?
-    Type 1 for friend, 2 for computer
-    2
-    Type the number of the square you want to place your piece in
-    Player 1's turn (X)
-    1 | 2 | 3
-    4 | 5 | 6
-    7 | 8 | 9
-    1
-    Computer's turn (O)
-    X | 2 | 3
-    4 | 5 | 6
-    7 | 8 | 9
-    Player 1's turn (X)
-    X | 2 | 3
-    O | 5 | 6
-    7 | 8 | 9
-    9
-    Computer's turn (O)
-    X | 2 | 3
-    O | 5 | 6
-    7 | 8 | X
-    That square is already taken, try again
-    Player 1's turn (X)
-    X | 2 | 3
-    O | 5 | 6
-    7 | 8 | X
-    3
-    Computer's turn (O)
-    X | 2 | X
-    O | 5 | 6
-    7 | 8 | X
-    Player 1's turn (X)
-    X | 2 | X
-    O | 5 | 6
-    7 | O | X
-    6
-    Player 1 wins!
-    [0m
-    [35m___________________________
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    |[0m          Menu!          [35m|
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    | 0 - Exit                |
-    | 1 - Rock Paper Scissors |
-    | 2 - Higher or Lower     |
-    | 3 - Tic Tac Toe         |
-    |_________________________|   [0m
-    
-    Choose an option.
-    
-    2
-    2: Higher or Lower
-    You have three guesses to guess the number I am thinking of between 1-8.
-    If you guess the number correctly, you win!
-    8
-    The number is lower
-    6
-    The number is lower
-    5
-    The number is lower
-    4
-    Game over.
-    [0m
-    [35m___________________________
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    |[0m          Menu!          [35m|
-    |~~~~~~~~~~~~~~~~~~~~~~~~~|
-    | 0 - Exit                |
-    | 1 - Rock Paper Scissors |
-    | 2 - Higher or Lower     |
-    | 3 - Tic Tac Toe         |
-    |_________________________|   [0m
-    
-    Choose an option.
-    
-    1
-    1: Rock Paper Scissors
-    Type r for rock, p for paper, or s for scissors
-    p
-    You chose paper 
-    The computer chose paper 
     It's a tie!
     [0m
     [35m___________________________
@@ -534,4 +422,3 @@ ConsoleGame.main(null);
 - Run the menu using recursion versus while loop.  Try to color differently.
 - Look over 10 units for College Board AP Computer Science A.  In your reorganized code blocks and comments identify the Units of Code Used. 
 - Answer why you think this reorganization and AP indetification is important?   
-

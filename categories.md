@@ -52,11 +52,12 @@ categories: [C1.4]
   <li class="has-subfolder">
     <div class="folder-header">
       <span class="arrow">▶</span>
-      Folder 2
+      Plans!
     </div>
     <ul class="subfolder">
-      <li><a href="">Subfolder 2.1</a></li>
-      <li><a href="">Subfolder 2.2</a></li>
+      <li><a href="{{site.baseurl}}/c4.0/2023/08/21/Week-0-Plan.html">Week 0</a></li>
+      <li><a href="{{site.baseurl}}/c4.0/2023/08/24/Week-1-Plan.html">Week 1</a></li>
+      <li><a href="{{site.baseurl}}/c4.0/2023/08/29/Week-2-Plan.html">Week 2</a></li>
     </ul>
   </li>
   <!-- More folder items here -->
