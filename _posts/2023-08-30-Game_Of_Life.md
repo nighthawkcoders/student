@@ -3,14 +3,10 @@ toc: true
 comments: false
 layout: post
 title: Game of Life
-description: Grab of the Game of Life from APCSA repo.
+description: Game of Life game
 type: hacks
 courses: { compsci: {week: 2} }
 ---
-
-{% comment %}
-Conway's Game of Life https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-{% endcomment %}
 
 ## Try Game by checking boxes with following patterns.
 
