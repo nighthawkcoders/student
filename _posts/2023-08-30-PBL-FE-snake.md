@@ -5,7 +5,7 @@ permalink: /frontend/snake
 image: /images/snake.png
 categories: [C4.9]
 tags: [javascript]
-type: hacks
+type: tangibles
 courses: { csse: {week: 2}, csp: {week: 2, categories: [2.C]}, csa: {week: 2} }
 ---
 

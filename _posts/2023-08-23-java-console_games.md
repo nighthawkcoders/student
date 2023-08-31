@@ -5,7 +5,7 @@ description: These console games show many elements from College Board's Units.
 courses: {'csa': {'week': 1}}
 categories: ['C4.0']
 author: Vunsh Mehta
-type: plans
+type: hacks
 ---
 
 ## Java Kernel for Jupyter Notebooks.

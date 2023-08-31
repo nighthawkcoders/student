@@ -3,7 +3,7 @@ layout: post
 title: Java Hello
 description: A progressive journey through Java basics starting with the classic "Hello, World!" example.
 categories: ['C4.0']
-type: plans
+type: hacks
 courses: {'csa': {'week': 1}}
 ---
 

@@ -4,7 +4,7 @@ description: A remix of Conway's game of life using timer, onclick and algorithm
 permalink: /frontend/life
 image: /images/game_of_life.svg
 tags: [javascript]
-type: hacks
+type: tangibles
 courses: { csse: {week: 2}, csp: {week: 2, categories: [2.C]}, csa: {week: 2} }
 ---
 
