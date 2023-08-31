@@ -10,6 +10,8 @@ Hello, I am Shaurya Goel, a Juinor at Del Norte High School.
 
 ![Overview Picture](image.PNG)
 
+<img src="/csapages/images/image.png" alt="homepage">
+
 ## Useful Shortcuts
 
 Useful shortcuts:
