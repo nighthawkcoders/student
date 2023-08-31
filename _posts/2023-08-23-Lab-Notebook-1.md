@@ -12,15 +12,15 @@ courses: {'csa': {'week': 1}}
 
 
 ```Java
-// Class definition
+// class definition
 class Car {
-    // Instance variables
+    // instance variables
     private String make;
     private String model;
     private int year;
     private boolean isRunning;
 
-    // Constructor
+    // constructor
     public Car(String make, String model, int year) {
         this.make = make;
         this.model = model;
@@ -28,69 +28,85 @@ class Car {
         this.isRunning = false;
     }
 
-    // Method to start the car
+    // method to start the car
     public void start() {
         isRunning = true;
         System.out.println(year + " " + make + " " + model + " is now running.");
     }
 
-    // Method to stop the car
+    // method to stop the car
     public void stop() {
         isRunning = false;
         System.out.println(year + " " + make + " " + model + " has stopped.");
     }
 
-    // Method to check if the car is running
+    // method to check if the car is running
     public boolean isCarRunning() {
         return isRunning;
     }
 
-    // Method to set the year of the car
+    // method to set the year of the car
     public void setYear(int newYear) {
         year = newYear;
     }
 
-    // Method to get the year of the car
+    // method to get the year of the car
     public int getYear() {
         return year;
+    }
+
+    // method to get the make of the car
+    public String getMake() {
+        return make;
+    }
+
+    // method to get the model of the car
+    public String getModel() {
+        return model;
     }
 }
 
 public class CarExample {
     public static void main(String[] args) {
-        // Instantiate an object of the Car class
+        // instantiate an object of the Car class
         Car myCar = new Car("Toyota", "Camry", 2023);
 
-        // Call methods on the object
-        myCar.start(); // Starting the car
-        myCar.stop();  // Stopping the car
+        // call methods on the object
+        myCar.start();
+        System.out.println(myCar.getYear() + " " + myCar.getMake() + " " + myCar.getModel() + " is running.");
 
-        // Method to change the year of the car
-        setYear(myCar, 2024);
+        myCar.stop();
+        System.out.println(myCar.getYear() + " " + myCar.getMake() + " " + myCar.getModel() + " has stopped.");
+
+        // method to change the year of the car
+        myCar.setYear(2024);
         System.out.println("Updated year of the car: " + myCar.getYear());
-    }
-
-    // Method to change the year of the car
-    public static void setYear(Car carObj, int newYear) {
-        carObj.setYear(newYear);
     }
 }
 
+CarExample.main(null);
+
 ```
+
+    2023 Toyota Camry is now running.
+    2023 Toyota Camry is running.
+    2023 Toyota Camry has stopped.
+    2023 Toyota Camry has stopped.
+    Updated year of the car: 2024
+
 
 ## Explain Anatomy of a Class in comments of program (Diagram key parts of the class):
 
 
 ```Java
-// Class definition
 class Car {
-    // Instance variables
+    // instance variables
     private String make;
     private String model;
     private int year;
     private boolean isRunning;
 
-    // Constructor
+    // constructor
     public Car(String make, String model, int year) {
         this.make = make;
         this.model = model;
@@ -98,7 +114,42 @@ class Car {
         this.isRunning = false;
     }
 
-    // Other methods...
+    // method to start the car
+    public void start() {
+        isRunning = true;
+        System.out.println(year + " " + make + " " + model + " is now running.");
+    }
+
+    // method to stop the car
+    public void stop() {
+        isRunning = false;
+        System.out.println(year + " " + make + " " + model + " has stopped.");
+    }
+
+    // method to check if the car is running
+    public boolean isCarRunning() {
+        return isRunning;
+    }
+
+    // method to set the year of the car
+    public void setYear(int newYear) {
+        year = newYear;
+    }
+
+    // method to get the year of the car
+    public int getYear() {
+        return year;
+    }
+
+    // method to get the make of the car
+    public String getMake() {
+        return make;
+    }
+
+    // method to get the model of the car
+    public String getModel() {
+        return model;
+    }
 }
 ```
 
@@ -139,12 +190,12 @@ In this code snippet, the anatomy of the Car class is explained with comments:
 
 
 ```Java
-// Class definition
+// class definition
 class Car {
-    // ...
+
 }
 
-// Instantiate an object of the Car class
+//instantiate an object of the Car class
 Car myCar = new Car("Toyota", "Camry", 2023);
 
 ```
@@ -158,12 +209,12 @@ Car myCar = new Car("Toyota", "Camry", 2023);
 
 ```Java
 class Car {
-    // Constructor
     public Car(String make, String model, int year) {
-        // Constructor body
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.isRunning = false;
     }
-
-    // ...
 }
 ```
 
@@ -174,18 +225,18 @@ class Car {
 
 
 ```Java
-// Method to set the year of the car
+// method to set the year of the car
 public void setYear(int newYear) {
     year = newYear;
 }
 
-// Call the setYear method with a new year value
+// call the setYear method with a new year value
 setYear(myCar, 2024);
 ```
 
 - The comment "Method to set the year of the car" identifies a method used for setting the year of the car object.
 - The method takes a parameter newYear (int) that represents the new year value.
-- The method is called later with the line setYear(myCar, 2024);, where myCar is the object on which the method is being called, and 2024 is the new year value being passed as an argument.
+- The method is called later with the line "setYear(myCar, 2024);", where myCar is the object on which the method is being called, and 2024 is the new year value being passed as an argument.
 
 # Java Console Games
 
