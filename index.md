@@ -10,14 +10,12 @@ categories: [C4.9]
 tags: [javascript]
 ---
 <style>
-
     body{
     }
     .wrap{
         margin-left: auto;
         margin-right: auto;
     }
-
     canvas{
         display: none;
         border-style: solid;
