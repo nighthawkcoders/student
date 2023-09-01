@@ -5,7 +5,7 @@ layout: post
 title: Calculator MD
 description: Grab of the Calculator from APCSA repo.
 type: tangibles
-courses: { compsci: {week: 2} }
+courses: { 'csa': {'week':2} }
 ---
 
 <style>

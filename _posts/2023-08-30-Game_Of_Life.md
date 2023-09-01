@@ -5,7 +5,7 @@ layout: post
 title: Game of Life
 description: Game of Life game
 type: hacks
-courses: { compsci: {week: 2} }
+courses: { 'csa': {'week':2} }
 ---
 
 ## Try Game by checking boxes with following patterns.
