@@ -132,4 +132,52 @@ Load all posts with site
   {% endfor %}
 
 </table>
+
+<style>
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #333;
+    margin-top: 20px;
+  }
+
+  /* Style the table headers */
+  th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #fff;
+  }
+
+  /* Style the table cells */
+  td {
+    padding: 10px;
+    border: 2px solid #333;
+  }
+
+  /* Alternate row color */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  /* Style the links in the table cells */
+  td a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+  }
+
+  /* Style the links on hover */
+  td a:hover {
+    text-decoration: underline;
+  }
+</style>
+
 {% endfor %}
