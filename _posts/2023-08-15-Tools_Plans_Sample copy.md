@@ -18,3 +18,5 @@ Learning outcome.  Installing Tools and showing usage of VSCode.
 
 - Thursday - Set up working daily planner in compsci of my student notebook
 
+- Friday - Continue working on course material 
+
