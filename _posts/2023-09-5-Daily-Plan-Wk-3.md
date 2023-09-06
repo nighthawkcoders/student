@@ -17,3 +17,5 @@ courses: { compsci: {week: 3} }
 - Thursday - 
 
 - Friday - 
+
+<a href="https://github.com/Nathaniel633/student/issues">Report an Issue</a>
