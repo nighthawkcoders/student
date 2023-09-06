@@ -118,7 +118,6 @@ courses: {'csa': {'week': 2}}
       const images = [];
 
       document.getElementById('resetButton').addEventListener('click', resetGame);
-      document.getElementById('quitButton').addEventListener('click', quitGame);
       start.style.display = 'none'
       gameContainer.style.display = 'block'
 
@@ -183,25 +182,6 @@ courses: {'csa': {'week': 2}}
               document.querySelector('main').classList.remove('hidden');
           }
 
-          function quitGame() {
-  // Hide the congratulations message
-  document.getElementById('congratulations').classList.add('hidden');
-
-  // Hide the game container and reset the game board
-  gameContainer.style.display = 'none';
-  const gameBoard = document.getElementById('gameBoard');
-  while (gameBoard.firstChild) {
-    gameBoard.removeChild(gameBoard.firstChild);
-  }
-
-  // Show the initial start button
-  start.style.display = 'block';
-
-  // Reset the cookies for fastest time and least moves
-  setCookie('fastestTime', '', -1); // Delete the cookie
-  setCookie('leastMoves', '', -1); // Delete the cookie
-}
-
       function flipCard() {
         if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
           this.classList.add('flipped')
@@ -234,6 +214,12 @@ courses: {'csa': {'week': 2}}
               setCookie('leastMoves', moves)
             } else if (moves === 0) {
               setCookie('leastMoves', moves)
+            }
+
+            if (timer.textContent < fastestTime) {
+            setCookie('fastestTime', timer.textContent)
+            } else if (timer.textContent === 0) {
+            setCookie('fastestTime', timer.textContent)
             }
 
             const congratulations = document.getElementById('congratulations');
@@ -406,7 +392,6 @@ courses: {'csa': {'week': 2}}
       const images = [];
 
       document.getElementById('resetButton').addEventListener('click', resetGame);
-      document.getElementById('quitButton').addEventListener('click', quitGame);
       start.style.display = 'none'
       gameContainer.style.display = 'block'
 
@@ -471,25 +456,6 @@ courses: {'csa': {'week': 2}}
               document.querySelector('main').classList.remove('hidden');
           }
 
-          function quitGame() {
-  // Hide the congratulations message
-  document.getElementById('congratulations').classList.add('hidden');
-
-  // Hide the game container and reset the game board
-  gameContainer.style.display = 'none';
-  const gameBoard = document.getElementById('gameBoard');
-  while (gameBoard.firstChild) {
-    gameBoard.removeChild(gameBoard.firstChild);
-  }
-
-  // Show the initial start button
-  start.style.display = 'block';
-
-  // Reset the cookies for fastest time and least moves
-  setCookie('fastestTime', '', -1); // Delete the cookie
-  setCookie('leastMoves', '', -1); // Delete the cookie
-}
-
       function flipCard() {
         if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
           this.classList.add('flipped')
@@ -522,6 +488,12 @@ courses: {'csa': {'week': 2}}
               setCookie('leastMoves', moves)
             } else if (moves === 0) {
               setCookie('leastMoves', moves)
+            }
+
+            if (timer.textContent < fastestTime) {
+            setCookie('fastestTime', timer.textContent)
+            } else if (timer.textContent === 0) {
+            setCookie('fastestTime', timer.textContent)
             }
 
             const congratulations = document.getElementById('congratulations');
