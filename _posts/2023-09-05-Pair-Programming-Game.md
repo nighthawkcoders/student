@@ -107,7 +107,7 @@ courses: {'csa': {'week': 2}}
         }
     });
 
-    start.addEventListener("click", function(event){
+    start.addEventListener("click", function(){
         this.remove();
         document.querySelector('main').classList.remove('hidden')
     });
@@ -381,7 +381,7 @@ courses: {'csa': {'week': 2}}
         }
     });
 
-    start.addEventListener("click", function(event){
+    start.addEventListener("click", function(){
         this.remove();
         document.querySelector('main').classList.remove('hidden')
     });
