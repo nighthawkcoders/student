@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: Markdown table
+title: Jquery table
 description: Table with Jquery that is pulling from a Covid-19 API!
 type: tangibles
 courses: { csa: {week: 2} }
@@ -23,7 +23,6 @@ categories: [C1.4]
                 <th>Continent</th>
                 <th>New Cases</th>
                 <th>Total Cases</th>
-                <!-- Add more table headers for other data as needed -->
             </tr>
         </thead>
         <tbody>
@@ -51,7 +50,6 @@ categories: [C1.4]
                         { data: 'continent' },
                         { data: 'cases.new' },
                         { data: 'cases.total' },
-                        // Add more columns for other data as needed
                     ]
                 });
             }

@@ -28,7 +28,7 @@ type: hacks
  
 
 
-### output using HTML and CSS
+### Output using HTML and CSS
  Multiple cells are used to setup HTML in this lesson. Many of the JavaScript cells will use the output tag(s) to write into the HTML that has been setup.  
 - %%html is used to setup HTML code block
 - "style" tag enables visuals customization
