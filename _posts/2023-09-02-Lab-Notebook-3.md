@@ -10,10 +10,11 @@ courses: {'csa': {'week': 2}}
 # JS Output w/ jquery Hacks
 
 <html>
-<li class="fork">Refer <a href="{{site.baseurl}}/c1.4/2023/09/02/Markdown-table.html">Here</a></li>
+<li class="fork">Refer <a href="{{site.baseurl}}/c1.4/2023/09/02/Markdown-table.html">Here</a> for Markdown Table</li>
 </html>
 
 ### Benefit of a Markdown Table
+- Easy to Use:
 
 
 ### Style for Tables from w3schools
@@ -34,15 +35,20 @@ JavaScript:
 
 ### Describe a benefit of a table that uses JavaScript
 Using JavaScript to enhance tables in HTML offers several benefits:
-
 - Dynamic Data Display: JavaScript can be used to populate, update, or manipulate table data dynamically. For example, you can fetch data from a server or perform calculations to update table cells without requiring a page refresh. This dynamic updating of data can provide users with real-time information.
-
 - Interactive Tables: JavaScript enables you to add interactive features to tables, such as sorting, filtering, and pagination. Users can easily find and organize data within the table, improving usability and user satisfaction.
-
 - Data Validation: JavaScript can be used to validate data entered into table cells in real-time, ensuring that data conforms to specific criteria or formats. This helps maintain data integrity and accuracy.
-
 - User Experience: By using JavaScript to enhance tables, you can create a more engaging and user-friendly experience. Users can interact with data directly in the table, reducing the need for additional navigation or user input.
-
 - Customization: JavaScript allows for extensive customization of table appearance and behavior. You can create visually appealing and functional tables tailored to your specific requirements.
-
 In summary, while HTML defines the structure and content of web pages, JavaScript adds dynamic behavior and interactivity. When used together, they enable developers to create rich and interactive web applications, including tables with enhanced features and user experiences.
+
+# Javascript and Jupyter Reference Hacks
+
+
+### Adapt this tutorial to your own work and interests, how many steps do you understand?
+
+### Relate console output on last step to a previous hack
+
+### Explain, how console.log can help find errors in code?
+
+### Try out ChatGPT Jupyter features; though I prefer using Web and cut-copy-paste

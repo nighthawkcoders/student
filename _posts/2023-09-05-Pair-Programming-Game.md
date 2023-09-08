@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pair Programming Game
-description: Conn
+description: Connector Game
 categories: ['C4.0']
 type: tangibles
 courses: {'csa': {'week': 2}}
@@ -51,24 +51,6 @@ courses: {'csa': {'week': 2}}
     .hidden {
     display: none;
     }
-    congratulations {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-  }
-  congratulations h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  congratulations p {
-    font-size: 18px;
-  }
   </style>
 
 <div class="game-container">
@@ -86,7 +68,6 @@ courses: {'csa': {'week': 2}}
     <h2>Congratulations!</h2>
     <p>You won in <span id="winMoves">0</span> moves and <span id="winTime">0</span> seconds.</p>
     <button id="resetButton">Play Again</button>
-    <button id="quitButton">Quit</button>
   </div>
 </div>
 
@@ -325,24 +306,24 @@ courses: {'csa': {'week': 2}}
     .hidden {
     display: none;
     }
-    congratulations {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-  }
-  congratulations h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  congratulations p {
-    font-size: 18px;
-  }
+    .congratulations {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    .congratulations h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .congratulations p {
+      font-size: 18px;
+    }
   </style>
 
 <div class="game-container">
@@ -355,12 +336,11 @@ courses: {'csa': {'week': 2}}
     <p>Least Moves: <span id="leastMoveCount">0</span></p>
     <p>Fastest Time: <span id="fastestTime">0</span> seconds</p>
   </main>
-<div id="congratulations" class="hidden">
+<div class="congratulations hidden" id="congratulations">
   <div class="message-box">
     <h2>Congratulations!</h2>
     <p>You won in <span id="winMoves">0</span> moves and <span id="winTime">0</span> seconds.</p>
     <button id="resetButton">Play Again</button>
-    <button id="quitButton">Quit</button>
   </div>
 </div>
 
