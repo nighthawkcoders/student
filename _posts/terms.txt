@@ -1,0 +1,20 @@
+make=command that helps run your local server
+make convert=checks and ensures Jupyter notebooks are up to date
+make clean=stops the local server and cleans the files
+make stop=stops the local server
+cd=allows you to move through directories
+cd vscode=allows you to go to VSCode directory
+python –version=shows you your current python version
+jupyter –version=shows all your jupyter files and their current versions
+git clone-clones a repository 
+rbenv versions=shows your current ruby versions
+ruby -v=shows your current ruby version
+bundle install=this command installs the dependencies in your Gemfile
+Image on Markdown=![text](image_file)
+ls=lists files in the respository
+pwd=Print working directory command
+mkdir=Command used to create directories
+echo=Print any text that follows the command
+clear=Clear the terminal display
+mv=Move or rename files
+sudo=command to create privileges
