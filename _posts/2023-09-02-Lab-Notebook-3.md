@@ -61,7 +61,7 @@ In summary, while HTML defines the structure and content of web pages, JavaScrip
 ### Storing elements of HTML as varibles by getting their ID
 
 
-```Java
+```java
 const start = document.getElementById('startButton');
 const gameContainer = document.querySelector('.game-container');
 const gameBoard = document.getElementById('gameBoard');
@@ -80,7 +80,7 @@ const start = document.getElementById('startButton'); refers back to (in the htm
 ### Storing Data with Cookies
 
 
-```Java
+```java
 // function to set cookie
 function setCookie(name, value, days) {
     const expires = new Date();
@@ -114,7 +114,7 @@ Here's how these functions work:
 ### API Usage
 
 
-```Java
+```java
 async function fetchDogs() {
     const url = 'https://dog-breeds2.p.rapidapi.com/dog_breeds';
     const options = {
@@ -203,3 +203,20 @@ async function fetchDogs() {
 - It processes the retrieved breeds data, creating pairs of images (duplicated for matching) and shuffling them randomly.
 - It initializes various game-related variables, such as flippedCards, moves, pairs, timerInterval, and startTime.
 - It creates HTML elements (cards) for the game board, attaching event listeners to each card.
+
+### Starting the Game
+
+
+```java
+start.addEventListener('click', async () => {
+    if (!gameStarted) {
+        await startGame();
+    }
+});
+```
+
+The provided code defines an event listener for a "click" event on an element with the id "start." When this element is clicked, the function inside the event listener is executed asynchronously. Here's an explanation of what this code does step by step:
+- start.addEventListener('click', async () => { ... });: This line attaches a "click" event listener to an HTML element with the id "start." It waits for a click event to occur on this element.
+- async () => { ... }: This part defines an asynchronous arrow function. The use of the async keyword indicates that this function can use await inside it to handle promises.
+- if (!gameStarted) { ... }: Within the asynchronous function, there is a conditional statement that checks the value of a variable called gameStarted. The ! operator negates the value, so it checks if gameStarted is false.
+- await startGame();: If gameStarted is false, this line of code calls the startGame() function using the await keyword. The await keyword is used with a function that returns a promise, and it pauses the execution of the function until the promise is resolved or rejected.
