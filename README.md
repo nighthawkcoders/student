@@ -1,3 +1,5 @@
+Link to Site[https://stg-7.github.io/CSAPages/]
+
 ## Blog site using GitHub Pages and Jekyll
 > This site is intended for Students.   This is to record plans, complete hacks, and do work for your learnings.
 - This can be customized to support computer science as you work through pathway (JavaScript, Python/Flask, Java/Spring)
