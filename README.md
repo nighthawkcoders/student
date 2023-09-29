@@ -12,7 +12,7 @@ All `GitHub Pages` websites are managed on GitHub infrastructure. GitHub uses `J
 ## Preparing a Preview Site 
 In all development, it is recommended to test your code before deployment.  The GitHub Pages development process is optimized by testing your development on your local machine, prior to files on GitHub
 
-Development Cycle. For GitHub pages, the tooling described below will create a development cycle  `make-code-save-preview`.  In the development cycle, it is a requirement to preview work locally, prior to doing a VSCode `commit` to git.
+Development Cycle. For GitHub pages, the tooling described below will create a development cycle  `make-code-save-preview`. In the development cycle, it is a requirement to preview work locally, prior to doing a VSCode `commit` to git.
 
 Deployment Cycle.  In the deplopyment cycle, `sync-github-action-review`, it is a requirement to complete the development cycle prior to doing a VSCode `sync`.  The sync triggers github repository update.  The action starts the jekyll build to publish the website.  Any step can have errors and will require you to do a review.
 
