@@ -24,7 +24,7 @@ var (Variable): Used for declaring variables globally or within a function, with
     const pi = 3.14159;
 
     globalVariable = "I can be changed";
-    // blockVariable can only be accessed within its block.
+    // blockVariable can only be accessed within its block
     // pi cannot be reassigned.
 
 ## Conditional Statements (if, else, switch):
